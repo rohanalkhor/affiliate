@@ -1,7 +1,7 @@
 
 let button, inp, url = [] , curl = [];
 function setup() {
-    createCanvas(deviceWidth, deviceHeight);
+    createCanvas(windowWidth, windowHeight);
     background(220);
     inp = createInput('Enter Amazon Product Link');
 
