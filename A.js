@@ -20,7 +20,7 @@ function convert(){
     for(let j  =0;  j<splitString.length ; j++){
         let refCheck = splitString[j][0] + splitString[j][1] + splitString[j][2];
         if( refCheck == 'ref'){
-            splitString[j] = 'ref=' + 'github04d-21'
+            splitString[j] = 'ref=' + 'github04d-21';
 
         }
         text(splitString[j], 20, 70 + 20 * j);
