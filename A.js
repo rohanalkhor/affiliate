@@ -23,25 +23,13 @@ function convert(){
 
         }
         text(splitString[j], 20, 70 + 20 * j);
-        curl += splitString[j] + '/'
+        curl += splitString[j] + '/';
     
     
     }
     
-    
-    //window.open(curl);
-    var linkArray = [curl , curl]; // your links
-    for (var i = 0; i < linkArray.length; i++) {
-    // will open each link in the current window
-        chrome.tabs.create({
-        url: linkArray[i]
-        });
-    }
+    window.open(curl);
     
     
-
-}
-
-function draw() {
 
 }
