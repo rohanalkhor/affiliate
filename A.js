@@ -1,11 +1,12 @@
 
 let button, inp, url = [] , curl = [];
 function setup() {
-    createCanvas(1000,500);
+    createCanvas(deviceWidth, deviceHeight);
     background(220);
-    inp = createInput('https://www.amazon.in/BITSAT-Year-wise-Solved-Papers-2019-2009/dp/9389418038/ref=pd_cart_bmx_2_1/257-3746552-3229513?_encoding=UTF8&pd_rd_i=9389418038&pd_rd_r=ff809024-2fc2-487e-8b38-9584e75d8656&pd_rd_w=KAtn1&pd_rd_wg=7vJ8L&pf_rd_p=a037f030-675a-4199-88ae-483e9b15581d&pf_rd_r=WG3ST3ADD1H7WM2DSTWA&psc=1&refRID=WG3ST3ADD1H7WM2DSTWA');
+    inp = createInput('Enter Amazon Product Link');
 
     inp.position(100, 19);
+    inp.size(100,50);
     button = createButton('Convert');
     button.position(19, 19);
     button.mousePressed(convert);
